@@ -16,7 +16,7 @@ public class HelloServlet extends HttpServlet {
 		String id = request.getParameter("id"); // getParameter로 받는 것들은 String
 		response.setContentType("text/html; charset=utf-8");
 		PrintWriter pw = response.getWriter();
-		pw.print("<h1>안녕 " + id +"</h1>");
+		pw.print("<h1>안녕   " + id +"</h1>");
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
