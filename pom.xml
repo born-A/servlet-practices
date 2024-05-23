@@ -6,7 +6,6 @@
   <packaging>pom</packaging>
   <modules>
   	<module>helloweb</module>
-  	<module>examplee</module>
   	<module>emaillist1</module>
   	<module>questbook1</module>
   	<module>guestbook1</module>
