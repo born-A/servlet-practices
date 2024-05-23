@@ -21,6 +21,7 @@
 			<option value="2000">2000년</option>
 			<option value="1999">1999년</option>
 			<option value="1998">1998년</option>
+			<option value="1998">1997년</option>
 		</select>
 		<br><br>
 		
