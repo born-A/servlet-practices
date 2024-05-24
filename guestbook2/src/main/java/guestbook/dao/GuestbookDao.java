@@ -27,14 +27,13 @@ public class GuestbookDao {
 			conn = DriverManager.getConnection(url, "webdb", "webdb");
 
 			//3. Statement 준비
-			String sql = "insert into guestbook values(null, ?, ?, ?, ?)";
+			String sql = "insert into guestbook values(null, ?, ?, ?, now())";
 			pstmt = conn.prepareStatement(sql);
 			
 			//4. binding
 			pstmt.setString(1, vo.getName());
 			pstmt.setString(2, vo.getPassword());
 			pstmt.setString(3, vo.getContents());
-			pstmt.setString(4,  LocalDate.now().toString());
 			
 			//5. SQL 실행
 			int count = pstmt.executeUpdate();
