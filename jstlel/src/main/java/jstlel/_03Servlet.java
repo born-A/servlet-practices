@@ -37,6 +37,8 @@ public class _03Servlet extends HttpServlet {
 	
 		request.setAttribute("list", list);
 		
+		String contents = "가\n나\n다\n라";
+		request.setAttribute("contents", contents);
 		request
 			.getRequestDispatcher("/WEB-INF/views/03.jsp")
 			.forward(request, response);
